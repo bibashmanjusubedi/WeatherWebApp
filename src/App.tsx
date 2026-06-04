@@ -1,24 +1,25 @@
-import './App.css'
+import "./App.css"
 import { useState } from "react"
-import { WeatherSearchBar } from "./components/WeatherSearchBar";
+import { CurrentWeatherHero } from "./components/CurrentWeatherHero"
+import { WeatherSearchBar } from "./components/WeatherSearchBar"
 
 function App() {
-  const [location,setLocation] = useState("London, UnitedKingDom");
-  const [refreshing,isRefreshing] = useState(false);
+  const [location, setLocation] = useState("London, United Kingdom")
+  const [isRefreshing, setIsRefreshing] = useState(false)
 
-  function handleSearch(){
-    console.log("Search location:",location);
+  function handleSearch() {
+    console.log("Search location:", location)
   }
 
-  async function handleRefresh(){
-    setIsRefreshing(true);
+  function handleRefresh() {
+    setIsRefreshing(true)
 
     // later call the weather api here
-    console.log("Refresh weather for : ", location);
+    console.log("Refresh weather for:", location)
 
     setTimeout(() => {
-      setIsRefreshing(false);      
-    },800);
+      setIsRefreshing(false)
+    }, 800)
   }
 
   return (
@@ -31,6 +32,8 @@ function App() {
           onRefresh={handleRefresh}
           isRefreshing={isRefreshing}
         />
+
+        <CurrentWeatherHero />
       </section>
     </main>
   )
