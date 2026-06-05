@@ -32,10 +32,17 @@ export function CurrentWeatherHero(){
                                 °C
                             </span>
 
-                       </div> 
+                       </div>
 
+                        <p className = "mt-5 text-[34px] font-semibold leading-none tracking-[-0.04em] text-slate-950 md:text-[42px]">
+                            Sunny
+                        </p>
 
                     </div>
+
+                    {/* <div className="rounded-[28px] border border-white/80 bg-white/65 p-5 shadow-[0_18px_45px_rgba(88,130,180,0.14)] backdrop-blur-xl md:mb-4">
+
+                    </div> */}
                 </div>
             </div>
         </section>
