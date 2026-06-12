@@ -92,20 +92,20 @@ const past24Hours: HourWeather[] = [
 
 export function Past24Hours(){
     return (
-        <section>
-            <div>
-                <History />
+        <section className="mt-7 rounded-[24px] border border-white/80 bg-white/65 p-5 shadow-[0_18px_50px_rgba(88,130,180,0.14)] backdrop-blur-xl md:p-6">
+            <div className="flex items-center gap-3">
+                <History className="w-5 h-5 shrink-0 text-slate-500" strokeWidth={1.8} />
 
-                <h2>
+                <h2 className="text-lg font-bold tracking-[-0.03rem] ">
                     Past 24 Hours
                 </h2>
 
-                <Separator />
+                <Separator className="ml-4 flex-1 bg-blue-100"/>
             </div>
 
-            <div>
-                <span>24 Hours ago</span>
-                <span>Now</span>
+            <div className="mt-5 flex items-center justify-between px-1 text-xs font-medium">
+                <span className="text-slate-500" >24 Hours ago</span>
+                <span className="text-blue">Now</span>
             </div>
 
             <div>
@@ -113,4 +113,14 @@ export function Past24Hours(){
             </div>
         </section>   
     )
+}
+
+
+function PastHourCard({ item }: { item:HourWeather }){
+    const Icon = item.icon
+
+    return (
+        <div>hello</div>
+    )
+
 }
