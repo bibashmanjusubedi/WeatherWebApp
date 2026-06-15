@@ -125,7 +125,6 @@ function PastHourCard({ item }: { item: HourWeather }) {
                 }
             `}
     >
-      hello
       <p
         className={`text-sm font-semibold ${
           item.active ? "text-blue-600" : "text-slate-800"
