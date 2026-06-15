@@ -3,6 +3,7 @@ import { useState } from "react"
 import { CurrentWeatherHero } from "./components/CurrentWeatherHero"
 import { WeatherSearchBar } from "./components/WeatherSearchBar"
 import { Past24Hours } from "./components/Past24Hours"
+import { Next24Hours } from "./components/Next24Hours"
 
 function App() {
   const [location, setLocation] = useState("London, United Kingdom")
@@ -37,6 +38,8 @@ function App() {
         <CurrentWeatherHero />
 
         <Past24Hours />
+
+        <Next24Hours />
       </section>
     </main>
   )
