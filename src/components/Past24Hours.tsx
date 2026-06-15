@@ -108,8 +108,8 @@ export function Past24Hours(){
                 <span className="text-blue">Now</span>
             </div>
 
-            <div>
-
+            <div className="mt-5 flex gap-3 overflow-x-auto pb-1">
+                Hello
             </div>
         </section>   
     )
@@ -120,7 +120,24 @@ function PastHourCard({ item }: { item:HourWeather }){
     const Icon = item.icon
 
     return (
-        <div>hello</div>
+        <div>
+            hello
+
+            <p>
+
+            </p>
+
+            <Icon />
+
+            <p>
+
+            </p>
+
+            <div>
+                <Wind />
+                <span></span>
+            </div>
+        </div>
     )
 
 }
