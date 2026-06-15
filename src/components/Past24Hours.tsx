@@ -101,7 +101,7 @@ export function Past24Hours() {
         <span className="text-blue">Now</span>
       </div>
 
-      <div className="flex justify-center mt-5 gap-3 overflow-x-auto pb-1">
+      <div className="flex w-full mt-5 gap-3 overflow-x-auto pb-1">
         {past24Hours.map((item) => (
           <PastHourCard key={item.time} item={item} />
         ))}
@@ -116,7 +116,7 @@ function PastHourCard({ item }: { item: HourWeather }) {
   return (
     <div
       className={`
-                flex min-w-[86px] flex-col items-center rounded-[18px] border px-3 py-4 text-center
+                flex w-full min-w-[86px] flex-col items-center rounded-[18px] border px-3 py-4 text-center
                 shadow-[0_10px_26px_rgba(88,130,180,0.10)] backdrop-blur-xl transition
                 ${
                   item.active
