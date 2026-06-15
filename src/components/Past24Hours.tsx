@@ -101,7 +101,7 @@ export function Past24Hours() {
         <span className="text-blue">Now</span>
       </div>
 
-      <div className="mt-5 flex gap-3 overflow-x-auto pb-1">
+      <div className="flex justify-center mt-5 gap-3 overflow-x-auto pb-1">
         {past24Hours.map((item) => (
           <PastHourCard key={item.time} item={item} />
         ))}
